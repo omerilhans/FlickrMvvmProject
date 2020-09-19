@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FlickrMvvmProject</string>
+
+    <string name="popup_btn_text">Tamam</string>
+    <string name="popup_btn_title">Error</string>
+    <string name="err_network_unavailable">Lütfen internet bağlantınızı kontrol edip tekrar deneyin!</string>
+    <string name="err_not_found_404">Sunucudan istenen kaynak, bir nedenden dolayı bulunamadı. Lütfen daha sonra tekrar deneyin!</string>
+    <string name="err_service_unavailable_503">Sunucu aşırı yoğunluktan dolayı yanıt veremiyor. Lütfen daha sonra tekrar deneyin!</string>
+    <string name="err_generic_message">Bir nedenden dolayı yanıt alınamıyor. Lütfen daha sonra tekrar deneyin!</string>
+
+    <string name="text_back">Back</string>
+    <string name="text_dialog_background_color">#00ffffff</string>
+
+</resources>

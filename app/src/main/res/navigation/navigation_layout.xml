@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/recentPhotosFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/recentPhotosFragment"
+        android:name="com.omerilhanli.flickrmvvmproject.ui.main.fragment.RecentPhotosFragment"
+        android:label="Recent Photos"
+        tools:layout="@layout/fragment_recent_photos">
+
+        <action
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+
+            android:id="@+id/action_Recent_to_Detail"
+            app:destination="@id/photoDetailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.omerilhanli.flickrmvvmproject.ui.main.fragment.PhotoDetailFragment"
+        android:label="Photo Detail"
+        tools:layout="@layout/fragment_photo_detail">
+
+        <action
+            android:id="@+id/action_Detail_to_Recent"
+            app:destination="@id/recentPhotosFragment" />
+    </fragment>
+
+
+</navigation>

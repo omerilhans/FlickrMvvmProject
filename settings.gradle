@@ -1,0 +1,3 @@
+include ':module-data'
+include ':app'
+rootProject.name = "FlickrMvvmProject"
