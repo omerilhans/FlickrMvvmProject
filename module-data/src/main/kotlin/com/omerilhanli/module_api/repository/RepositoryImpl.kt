@@ -5,8 +5,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class RepositoryImpl @Inject constructor(var api: Api) :
-    IRepository {
+class RepositoryImpl @Inject constructor(var api: Api) : IRepository {
 
     override fun getPublishedRecentPhotos(page: Int) = api.getRecent(page = page)
 

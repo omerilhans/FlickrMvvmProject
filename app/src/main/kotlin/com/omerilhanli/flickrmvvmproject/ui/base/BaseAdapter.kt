@@ -10,8 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 abstract class BaseAdapter<VH : RecyclerView.ViewHolder, Data>(
     var mDataList: ArrayList<Data>? = null,
     @LayoutRes var itemLayoutId: Int
-) :
-    RecyclerView.Adapter<VH>() {
+) : RecyclerView.Adapter<VH>() {
 
     lateinit var binding: ViewDataBinding
 

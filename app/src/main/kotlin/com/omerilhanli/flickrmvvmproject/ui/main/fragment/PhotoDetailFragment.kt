@@ -32,7 +32,7 @@ class PhotoDetailFragment : BaseFragment<FragmentPhotoDetailBinding>(R.layout.fr
 
         binding?.let {
             with(it) {
-                lifecycleOwner = viewLifecycleOwner
+                lifecycleOwner = this@PhotoDetailFragment
                 handler = this@PhotoDetailFragment.viewModel
                 viewModel = this@PhotoDetailFragment.viewModel
 

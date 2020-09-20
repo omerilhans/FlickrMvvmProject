@@ -19,7 +19,9 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class RecentPhotosFragment : BaseFragment<FragmentRecentPhotosBinding>(R.layout.fragment_recent_photos),
-    SwipeRefreshLayout.OnRefreshListener, BaseAdapter.ItemClickListener<Photo>, RecyclerPhotosAdapter.OnScrollToBottom {
+    SwipeRefreshLayout.OnRefreshListener,
+    BaseAdapter.ItemClickListener<Photo>,
+    RecyclerPhotosAdapter.OnScrollToBottom {
 
     private val viewModel by activityViewModels<MainViewModel>()
 
@@ -38,7 +40,7 @@ class RecentPhotosFragment : BaseFragment<FragmentRecentPhotosBinding>(R.layout.
 
         binding?.let {
             with(it) {
-                lifecycleOwner = viewLifecycleOwner
+                lifecycleOwner = this@RecentPhotosFragment
                 handler = this@RecentPhotosFragment.viewModel
 
                 adapter = RecyclerPhotosAdapter.instance

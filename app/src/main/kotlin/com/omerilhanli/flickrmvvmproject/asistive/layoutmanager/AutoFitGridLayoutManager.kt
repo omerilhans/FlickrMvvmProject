@@ -8,8 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Recycler
 import kotlin.math.max
 
-class AutoFitGridLayoutManager(private val mContext: Context) :
-    GridLayoutManager(mContext, COUNT) {
+class AutoFitGridLayoutManager(private val mContext: Context) : GridLayoutManager(mContext, COUNT) {
     private var columnWidth = 0
     private var columnWidthChanged = true
     private val screenWidth: Int

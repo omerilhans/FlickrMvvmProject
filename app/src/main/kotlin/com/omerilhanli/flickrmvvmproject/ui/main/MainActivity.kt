@@ -24,12 +24,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main), 
     }
 
     private fun set() {
-
         viewModel.navigator = this
-
         binding?.let {
             with(it) {
-                lifecycleOwner = lifecycleOwner
+                lifecycleOwner = this@MainActivity
                 handler = viewModel
             }
         }
